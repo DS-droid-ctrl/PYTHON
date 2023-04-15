@@ -9,3 +9,4 @@ for x in range(sum):
     for y in range(product):
         if sum == x + y and product == x * y:
             print(x, y)
+            break
