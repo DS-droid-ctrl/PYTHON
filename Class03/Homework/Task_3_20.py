@@ -14,6 +14,7 @@ dictionary = {1: 'A, E, I, O, U, L, N, S, T, R, А, В, Е, И, Н, О, Р, С, 
               8: 'J, X, Ш, Э, Ю',
               10: 'Q, Z, Ф, Щ, Ъ'}
 word = input('Введите слово: ').upper()
+sum = 0
 for i in word:
     for (k,v) in dictionary.items():
         if i in v:
