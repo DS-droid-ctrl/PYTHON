@@ -44,6 +44,11 @@ def simple(n):
         if n % i == 0:
             return False
     return True
+print(simple(6))
+
+for i in range(101)
+    if simple(i)
+    print(i)
 """
 
 # Дано натуральное число N и последовательность
