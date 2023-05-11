@@ -192,12 +192,12 @@ print(i)
 
 
 # Можно использовать вложенные циклы:
-line = ""
-for i in range(5):
-    line = ""
-    for j in range(5):
-        line += "*"
-    print(line)
+# line = ""
+# for i in range(5):
+#     line = ""
+#     for j in range(5):
+#         line += "*"
+#     print(line)
 
 """
 Возникают ситуации, когда в некоторых задачах необходимо поработать со строкой,
