@@ -129,7 +129,7 @@ while n > 0:
     x = n % 10
     summa += x
     n = n // 10
-print(summa) # получится 4 + 2 + 3
+print(summa) # получится 3 + 2 + 4
 """
 
 """
