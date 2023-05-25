@@ -24,7 +24,7 @@ if values == transformed_values:
 else:
     print('fail')
 """
-
+"""
 orbits = [(1, 3), (2.5, 10), (7, 2), (6, 6), (4, 3), (11, 11)]
 print(*find_farthest_orbit(orbits))
 
@@ -96,3 +96,4 @@ else:
     print('different')
 
 # for char in аёеиуояюэы: - так можно пробежаться по гласным
+"""
