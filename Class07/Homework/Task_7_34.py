@@ -14,18 +14,46 @@ import re
 def proverka(text):
     if re.search('[A-Za-z0-9]', text):
         print("Введен некорректный текст")
-    
-
-def rifma(text):
-
-    st = text.lower().split()
-
-    f = lambda x: sum(1 for i in x if i in 'аеёиоуыэюя')
-    tmp = f(st[0])
-    if all([f(i) == tmp for i in st]):
-        return 'Парам пам-пам'
-    return 'Пам парам'
 
 print(proverka(text))
-print(rifma(text))
+
+text = text.split()
+print(text)
+s4 = 'аеёиоуыэюя'
+
+def extractDigits(text):
+    return list(map(lambda el:[el], text))
+st = extractDigits(text)
+print(st)
+
+list_1 = st[0]
+list_2 = st[1]
+list_3 = st[2]
+print(list_1, list_2, list_3)
+
+str_1 = ' '.join(list_1)
+str_2 = ' '.join(list_2)
+str_3 = ' '.join(list_3)
+print(str_1, str_2, str_3)
+
+s1="".join(c for c in str_1 if c.isalpha())
+s2="".join(c for c in str_2 if c.isalpha())
+s3="".join(c for c in str_3 if c.isalpha())
+print (s1, s2, s3)
+print(s4)
+
+def count(s, s4):
+    results = 0
+    for w in s:
+        results += s4.count(w)
+    return results
+a = count(s1 , s4)
+b = count(s2 , s4)
+c = count(s3 , s4)
+print(a, b, c)
+
+if a == b == c and a != 0 and b != 0 and c != 0:
+    print('Парам пам-пам')
+else:
+    print('Пам парам')
 
